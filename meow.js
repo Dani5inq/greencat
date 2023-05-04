@@ -2,11 +2,8 @@ let logo = document.getElementById('loggo')
 let lc = document.getElementsByClassName('logo')
 
 const logoColor = () => {
-   if (logo.style.color === 'gold') {
-      logo.style.color = 'white';
-   } else {
-      logo.style.color = 'gold'
-   }
+ const randomColor = Math.floor(Math.random()*16777215).toString(16);
+   logo.style.color = '#' + randomColor;
 
 };
 
